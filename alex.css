@@ -117,8 +117,10 @@ ul {
 }
 
 .exercise_list {
+  display: flex;
+  justify-content: center;
   list-style: none;
-  text-align: left;
+
   background-color: var(--main-color);
 }
 /* Metronome */
@@ -128,4 +130,8 @@ ul {
   height: 520px;
   border-style: none;
   border-radius: 20px;
+}
+
+.resources {
+  text-align: center;
 }
