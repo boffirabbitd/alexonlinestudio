@@ -29,6 +29,10 @@ h1 {
   margin: 0;
 }
 
+ul {
+  text-align: left;
+}
+
 /* Next Lesson */
 .next_lesson {
   text-align: center;
@@ -69,6 +73,29 @@ h1 {
   color: var(--main-color);
 }
 
+.guitar_link {
+  display: inline-block;
+  border: none;
+  padding: 1%;
+  margin-left: 1%;
+  text-decoration: none;
+  background-color: var(--main-dark-color);
+  color: var(--main-color-dark);
+  text-align: center;
+  font-size: 2em;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 250ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.guitar_link:hover {
+  background-color: var(--main-medium-color);
+  color: var(--main-color);
+}
+
 /* Homework Container */
 .homework_container {
   display: flex;
@@ -89,6 +116,11 @@ h1 {
   text-align: center;
 }
 
+.exercise_list {
+  list-style: none;
+  text-align: left;
+  background-color: var(--main-color);
+}
 /* Metronome */
 .metronome {
   justify-content: center;
