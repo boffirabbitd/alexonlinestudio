@@ -40,12 +40,18 @@
           <ul class="navbar-nav">
             <!--navbar item 1-->
             <li class="nav-item">
-              <a href="#next-lesson" class="nav-link">Next Lesson</a>
+              <a href="#practice" class="nav-link">Practice for next lesson</a>
             </li>
+            <li class="nav-item">
+              <a href="#next-lesson" class="nav-link"
+                >next Lesson: Oct 7 5:00 PM</a
+              >
+            </li>
+
             <li class="nav-item">
               <a
                 type="button"
-                class="btn btn-outline-primary btn-sm btn-block"
+                class="btn btn-outline-primary btn-m btn-block"
                 href="https://us04web.zoom.us/j/8065763371?pwd=xdfckt8kTHu4rwi4Hjz7CuhjrWCZky.1"
                 >👆 Enter Class</a
               >
@@ -54,65 +60,108 @@
         </div>
       </div>
     </nav>
-    <section id="intro">
-      <!-- Main Container -->
-      <div class="container-fluid text-center">
-        <header id="next-lesson" class="row row-cols-2">
-          <div class="col text-end">next lesson on</div>
-          <div class="col text-start fw-bold">Sun 7 at 5pm, 2023</div>
-        </header>
-        <div class="col mt-2">
+
+    <!-- Main Container -->
+    <section class="container-md text-center">
+      <!-- FILEPATH: /home/mario/empire/Empire/online_lesson_figma/index.html -->
+
+      <!-- 
+          This code represents a div element with the following classes:
+          - col: This class is used to create a column in a Bootstrap grid system.
+          - mt-2: This class adds a margin-top of 2 units to the element.
+          - d-none: This class hides the element on all screen sizes.
+          - d-md-block: This class displays the element as a block on medium and larger screen sizes.
+        -->
+      <div class="row m-2 d-md-none d-block">
+        <div class="row">
+          <p class="col-8 text-right">next Lesson: Oct 7 5:00 PM</p>
           <a
             type="button"
-            class="btn btn-outline-primary btn-lg btn-block"
+            class="col-4 btn btn-outline-primary btn-m"
             href="https://us04web.zoom.us/j/8065763371?pwd=xdfckt8kTHu4rwi4Hjz7CuhjrWCZky.1"
-            >👆 Enter Class</a
+            >Enter Class 👆</a
           >
         </div>
-        <hr class="hr hr-blurry" />
-        <div class="row mt-2">
-          <h1 class="display-1">Practice</h1>
+      </div>
 
-          <!-- 1st Practice Card -->
-          <div class="card mx-auto col-10">
-            <img class="card-img-top" src="modes.png" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">
-                Major Scale Modes <strong>Patterns</strong>
-              </h5>
-              <p class="card-text">
-                Each pattern is a different combination of X, Y or Z
-              </p>
-              <ul class="card-text" style="list-style: none">
-                <li>1= Major Scale/Ionian Mode</li>
-                <li>2= Dorian Mode</li>
-                <li>3= Phrigian Mode</li>
-                <li>2= Lydian Mode</li>
-                <li>2= Mixolidian Mode</li>
-                <li>2= Minor Scale/Aeolian Mode</li>
-                <li>2= Diminished Scale</li>
-              </ul>
-              <a
-                href="https://www.youtube.com/watch?v=rQf6i8KIwJU&t=250s"
-                class="btn btn-outline-primary"
-                >See Video Explanation</a
-              >
-            </div>
+      <!-- Practice Cards-->
+      <section id="practice" class="container-md">
+        <h1 class="display-1">Practice</h1>
+
+        <!-- 1st Practice Card -->
+        <div class="card mx-auto col-10">
+          <img class="card-img-top" src="modes.png" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">
+              Major Scale Modes <strong>Patterns</strong>
+            </h5>
+            <p class="card-text">
+              Each pattern is a different combination of X, Y or Z
+            </p>
+            <ul class="card-text" style="list-style: none">
+              <li>1= Major Scale/Ionian Mode</li>
+              <li>2= Dorian Mode</li>
+              <li>3= Phrigian Mode</li>
+              <li>2= Lydian Mode</li>
+              <li>2= Mixolidian Mode</li>
+              <li>2= Minor Scale/Aeolian Mode</li>
+              <li>2= Diminished Scale</li>
+            </ul>
+            <a
+              href="https://www.youtube.com/watch?v=rQf6i8KIwJU&t=250s"
+              class="btn btn-outline-primary"
+              >See Video Explanation</a
+            >
           </div>
+        </div>
+      </section>
+    </section>
 
-          <hr class="hr-blurry" />
-
-          <!-- Metronome -->
-          <div class="row-cols-1">
-            <iframe
-              class="embed-responsive-item"
-              height="1000px"
-              src="https://violinspiration.com/wp-content/uploads/metronome/index.html"
-            ></iframe>
+    <!--Previous Practices-->
+    <section id="topics">
+      <div class="container-md mt-5">
+        <div class="text-center">
+          <p class="lead text-muted">Previuos Lessons</p>
+        </div>
+        <div class="row m-2 g-5 justify-content-around align-item-center">
+          <!-- accordion 1 -->
+          <div class="accordion" id="lastweek">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#lastweek-1"
+                  aria-expanded="true"
+                  aria-controls="lastweek-1"
+                >
+                  Last Week
+                </button>
+              </h2>
+              <div
+                id="lastweek-1"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-1"
+                data-bs-parent="lastweek"
+              >
+                <div class="accordion-body">Claro chee</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Metronome -->
+    <section class="row-cols-1 mt-2">
+      <iframe
+        class="embed-responsive-item"
+        height="1000px"
+        src="https://violinspiration.com/wp-content/uploads/metronome/index.html"
+      ></iframe>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
